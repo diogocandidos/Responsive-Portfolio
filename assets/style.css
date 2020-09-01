@@ -100,10 +100,11 @@ body {
     float: left;
   }
 
-  #link-box {height: 200px;}
+  #link-box {height: 260px;}
 
   .social {
-    width: 30%;
+    width: 25%;
+    margin-left: 10px;
   }
   
   /*portfolio page*/
