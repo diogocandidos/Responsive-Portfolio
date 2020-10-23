@@ -103,8 +103,9 @@ body {
   #link-box {height: 260px;}
 
   .social {
-    width: 25%;
+    width: 23%;
     margin-left: 10px;
+    padding-bottom: 10px;
   }
   
   /*portfolio page*/
