@@ -12,26 +12,30 @@
 <body>
 
   <div class="header">
-    <nav class="navbar navbar-expand-md navbar-light">
-      <a id="logo" class="navbar-brand" href="#">Diogo Candido da Silva</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-          <a class="nav-link border-right" href="#">About</a> 
-          </li>
-          <li class="nav-item">
-          <a class="nav-link border-right" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <nav class="site-navigation navbar navbar-expand-md navbar-light">
+      <div class="site-navigation-inner site-container">
+        <a id="logo" class="navbar-brand" href="#">Diogo Candido da Silva</a>
+        <div class="main-navigation">
+          <ul class="main-navigation__ul">
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+          </ul>
+        </div>
+        <div id="myBtn" class="burger-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <script>
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+        </script>
+  
       </div>
     </nav>
-    
   </div>
           
     <section>
@@ -39,7 +43,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-12 main-section">
           <h1 class="h1">About me</h1>
-          <img src="https://media-exp1.licdn.com/dms/image/C5603AQGJSnTjHutMEg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=SnGQzYmOdtx5tVIpNCjweMy6TGPObg2lRjOp7BzCZ3k"  class="image" alt="Diogo Candido da Silva">
+          <img src="assets/Diogo.jpeg"  class="image" alt="Diogo Candido da Silva">
           <p>Born and raised in Brazil, I am 33 years old and based in San Diego, California since 2015. I am full stack web developer student currently enrolled in the Coding Boot Camp at UCSD (University of California San Diego).</p><p>In my country I graduated in Pharmaceutical Sciences. After my graduation, I worked for some national pharmaceutical companies. I have always been working with technology, which inspired me to increase my knowledge and skills. I am thrilled to learn a new field where I can apply all the knowledge acquired in this program.</p>
           <p> In my free time, I like to gather with my family and friends, travel, work out, learn new things and listen to music.</p>
         </div>
@@ -72,6 +76,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 
 
 </body>
